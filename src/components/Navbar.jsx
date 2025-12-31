@@ -10,9 +10,9 @@ import { logout } from '../redux/features/auth/authSlice';
 const Navbar = () => {
 
     const products = useSelector((state) => state.cart.products);
-    const [isCartOpen, setisCartOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
     const handleCartToggle = () => {
-        setisCartOpen(!isCartOpen)
+        setIsCartOpen(!isCartOpen)
     }
 
     // show user if logged in
@@ -63,7 +63,7 @@ const Navbar = () => {
                     <li className='link'><Link to="/">Home</Link></li>
                     <li className='link'><Link to="/shop">Shop</Link></li>
                     <li className='link'><Link to="/">Pages</Link></li>
-                    <li className='link'><Link to="/contact">Contact</Link></li>
+                    {/* <li className='link'><Link to="/contact">Contact</Link></li> */}
                 </ul>
 
                 {/* logo */}
